@@ -203,7 +203,7 @@
     <h2 class="f1-ns f3 header-font">
         <a href="https://dkane.net/" class="link near-black logo">David Kane's blog</a>
     </h2>
-    <div class="flex-ns flex-wrap mh-3 mw-100">
+    <div class="flex-ns flex-wrap mh-3 mw-100" id="blog-feed-posts">
         <article class="w-100 mv3 mh3 mh0-ns ph3-ns flex">
     <a href="https://dkane.net/" target="_blank"         class="near-black link no-underline bg-yellow flex-auto bg-animate hover-bg-gold shadow-4">
             <div class="flex flex-column flex-row-ns">
@@ -249,6 +249,36 @@
                 class="link yellow">company number 14015213</a>)
         </div>
     </footer><!-- /#contentinfo -->
+
+<template id="feed-item-first">
+    <article class="w-100 mv3 mh3 mh0-ns ph3-ns flex">
+        <a href=""
+            class="near-black link no-underline bg-yellow flex-auto blog-post-link">
+            <div class="flex flex-column flex-row-ns">
+                <div class="pl3 pl4-ns pv3 pv4-ns w-50-ns w-100">
+                    <h4 class="f5 gray normal"><span class="blog-post-author">David Kane</span> - <time datetime="" class="blog-post-date"></time></h4>
+                    <h3 class="f2-l f3 near-black header-font b wb-word mv0 blog-post-title"></h3>
+                </div>
+                <!--<div class="w-50-ns w-100">
+                    <img src="/images/boundaries/geolookup.png" class="db h5 fr">
+                </div>-->
+            </div>
+        </a>
+    </article>
+</template>
+<template id="feed-item">
+    <article class="w-100-ns w-100 mv3 mh3 mh0-ns ph3-ns flex">
+        <div class="flex-auto bl bw4 b--yellow">
+            <a href="" class="near-black link no-underline blog-post-link">
+                <div class="pv1 pv2-ns pl2 pl3-ns">
+                    <h4 class="f5 gray normal ma0"><span class="blog-post-author"></span> - <time datetime="" class="blog-post-date"></time></h4>
+                    <h3 class="f3-l f4 near-black header-font b wb-word mv0 blog-post-title"></h3>
+                </div>
+            </a>
+        </div>
+    </article>
+</template>
+<script defer src="https://kanedata.co.uk/theme/js/main.js"></script>
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript></body>
 
